@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Generare cod prezenta</title>
+</head>
+<body>
+    <header>
+        <h1>ClaMa (Class Manager)</h1>
+        <h2>Generare cod prezenta</h2>
+    </header>
+
+    <div class="card">
+        <p>Genereaza cod pentru prezenta format din 6 cifre</p>
+        <h2><p id="demo"></p></h2>
+        <p><button onclick="generareCod()">Genereaza cod</button></p>
+      </div>
+
+<script>
+function generareCod(){
+    document.getElementById("demo").innerHTML =
+    Math.floor(Math.random() * 899999)+100000;
+}  //Functia de generare cod prezenta
+</script>
+
+</body>
+</html>

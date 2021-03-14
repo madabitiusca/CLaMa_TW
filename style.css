@@ -1,0 +1,38 @@
+h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #388087;
+}
+h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #388087;
+}
+header{
+    padding: 25px;
+    background-color: #BADFE7;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #BADFE7;
+    color: #388087;
+  }
+  
+  .card button {
+    border: none;
+    padding: 12px;
+    color: #388087;
+    background-color: #c2edce;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
