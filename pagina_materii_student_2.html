@@ -8,116 +8,241 @@
     <header>
         <h1>ClaMa (Class Manager)</h1>
     </header>
-        
-  
-    <h2>Programare Avansata</h2>
-
-      <!-- Trigger/Open The Modal -->
-      <button class="myBtn">Note</button>
-    
-      <!-- The Modal -->
-     <div  class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-        </div>
-        <div class="modal-body">
-          <p>Punctaj laborator: 0</p>
-          <p>Nota test scris: 0</p>
-        </div>
-        <div class="modal-footer">
-          <h3>Nota finala: 0</h3>
-        </div>
-      </div>
-    
-    </div>
-    
-    <h2>Ingineria Programarii</h2>
-    
-    <!-- Trigger/Open The Modal -->
-    <button class="myBtn">Note</button>
-    
-    <!-- The Modal -->
-    <div  class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-        </div>
-        <div class="modal-body">
-          <p>Punctaj laborator: 0</p>
-          <p>Nota test scris: 0</p>
-        </div>
-        <div class="modal-footer">
-          <h3>Nota finala: </h3>
-        </div>
-      </div>
-    </div>
 
 
-    <h2>Tehnologii Web</h2>
-    
-    <!-- Trigger/Open The Modal -->
-    <button class="myBtn">Note</button>
-    <!-- The Modal -->
-    <div  class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content">
-       
-          <span class="close">&times;</span>
-        
-        <div class="modal-body">
-          <p>I: </p>
-          <p>S: </p>
-          <p>T: </p>
-        </div>
-        <div class="modal-footer">
-          <h3>Nota finala: </h3>
-        </div>
-      </div>
-    </div>
 
-    <h2>Optional</h2>
-    
-    <!-- Trigger/Open The Modal -->
-    <button class="myBtn">Note</button>
-    <!-- The Modal -->
-    <div  class="modal">
-    
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
+    <table>
+      <tr>
+        <!--materie-->
+        <th> <h2>Tehnologii Web</h2></th>
+          <th><!-- Modal  Note-->
+            <button class="myBtn">Note</button>
+            <!--  Modal -->
+            <div  class="modal">
+                <!-- Continut note -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                 </div>
+                  <div class="modal-body">
+                    <p>I: </p>
+                    <p>S: </p>
+                    <p>T: </p>
+                  </div>
+                <div class="modal-footer">
+                  <h3>Nota finala: 0</h3>
+                </div>
+            </div>
+        </th>
+        <!--prezente-->  
+        <th>
+          <button class="myBtn">Prezente</button>
+          <!--  Modal -->
+          <div  class="modal">
+            <!-- Continut note -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+             </div>
+              <div class="modal-body">
+                
+              </div>
+            <div class="modal-footer">
+              <h3>Total prezente: 0</h3>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Nota: </p>
-        </div>
-        </div>
-      </div>
+        </th>
 
-    <h2>SGBD</h2>
+        <!--Cod prezenta-->
+        <td>
+          <button class="myBtn">Introducere cod prezenta</button>
+          <div class="modal">
+            <div class="modal-content-codprezenta">
+              <span class="close">x</span>
+              <h3>Cod prezenta: </h3>
+              <form action="/action_page.php" method="post" enctype="text/plain">
+                <input type="text" name=""><br><br>
+                <input type="submit" value="Trimite">
+                </form>
+            </div>
+          </div>
+        </td>
+        <!--atasare-->
+        <th>
+          <button class="myBtn">Atasare</button>
+          <!--  Modal -->
+          <div  class="modal">
+            <!-- Continut note -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+             </div>
+              <div class="Atasare">
+                <form action="/action_page.php">
+                  <input type="file" id="myFile" name="filename">
+                
+                  <input type="submit">
+                </form>
+              </div>
+        </div>
+           </th>
+      </tr>
+
+      
+      <tr>
+        <!--materie-->
+        <th> <h2>Programare avansata</h2></th>
+          <th><!-- Modal  Note-->
+            <button class="myBtn">Note</button>
+            <!--  Modal -->
+            <div  class="modal">
+                <!-- Continut note -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                 </div>
+                  <div class="modal-body">
+                    <p>Punctaj laborator: 0</p>
+                    <p>Nota test scris: 0</p>
+                  </div>
+                <div class="modal-footer">
+                  <h3>Nota finala: 0</h3>
+                </div>
+            </div>
+        </th>
+        <!--prezente-->  
+        <th>
+          <button class="myBtn">Prezente</button>
+          <!--  Modal -->
+          <div  class="modal">
+            <!-- Continut note -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+             </div>
+              <div class="modal-body">
+                
+              </div>
+            <div class="modal-footer">
+              <h3>Total prezente: 0</h3>
+            </div>
+        </div>
+        </th>
+
+        <!--Cod prezenta-->
+        <th>
+          <button class="myBtn">Introducere cod prezenta</button>
+          <div class="modal">
+            <div class="modal-content-codprezenta">
+              <span class="close">x</span>
+              <h3>Cod prezenta: </h3>
+              <form action="/action_page.php" method="post" enctype="text/plain">
+                <input type="text" name=""><br><br>
+                <input type="submit" value="Trimite">
+                </form>
+            </div>
+          </div>
+        </th>
+        <!--atasare-->
+        <th>
+          <button class="myBtn">Atasare</button>
+          <!--  Modal -->
+          <div  class="modal">
+            <!-- Continut note -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+             </div>
+                <div class="Atasare">
+                  <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                  
+                    <input type="submit">
+                  </form>
+                </div>
+                
+        </div>
+           </th>
+      </tr>
     
-    <!-- Trigger/Open The Modal -->
-    <button class="myBtn">Note</button>
-    <!-- The Modal -->
-    <div class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-       
-          <span class="close">&times;</span>
-        <div class="modal-body">
-          <p>Nota activitate: </p>
-          <p>Nota prezentare: </p>
+      <tr>
+        <!--materie-->
+        <th> <h2>Ingineria Programarii</h2></th>
+          <th><!-- Modal  Note-->
+            <button class="myBtn">Note</button>
+            <!--  Modal -->
+            <div  class="modal">
+                <!-- Continut note -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                 </div>
+                  <div class="modal-body">
+                    <p>Punctaj laborator: 0</p>
+                    <p>Nota test scris: 0</p>
+                  </div>
+                <div class="modal-footer">
+                  <h3>Nota finala: 0</h3>
+                </div>
+            </div>
+        </th>
+        <!--prezente-->  
+        <th>
+          <button class="myBtn">Prezente</button>
+          <!--  Modal -->
+          <div  class="modal">
+            <!-- Continut note -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+             </div>
+              <div class="modal-body">
+                
+              </div>
+            <div class="modal-footer">
+              <h3>Total prezente: 0</h3>
+            </div>
         </div>
-        <div class="modal-footer">
-          <h3>Nota finala: </h3>
+        </th>
+
+        <!--Cod prezenta-->
+        <th>
+          <button class="myBtn">Introducere cod prezenta</button>
+          <div class="modal">
+            <div class="modal-content-codprezenta">
+              <span class="close">x</span>
+              <h3>Cod prezenta: </h3>
+              <form action="/action_page.php" method="post" enctype="text/plain">
+                <input type="text" name=""><br><br>
+                <input type="submit" value="Trimite">
+                </form>
+            </div>
+          </div>
+        </th>
+        <!--atasare-->
+        <th>
+          <button class="myBtn">Atasare</button>
+          <!--  Modal -->
+          <div  class="modal">
+            <!-- Continut note -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+             </div>
+                <div class="Atasare">
+                  <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                  
+                    <input type="submit">
+                  </form>
+                </div>
         </div>
-      </div>
-    </div>
+           </th>
+      </tr>
+
+
+    </table>
+      
       
 
 
@@ -132,6 +257,8 @@
         var span = document.getElementsByClassName("close");
 
     // When the user clicks the button, open the modal 
+
+      
         btn[0].onclick = function() {
         modal[0].style.display = "block";
         }
@@ -151,6 +278,26 @@
         btn[5].onclick = function() {
         modal[5].style.display = "block";
         }
+        btn[6].onclick = function() {
+        modal[6].style.display = "block";
+        }
+        btn[7].onclick = function() {
+        modal[7].style.display = "block";
+        }
+        btn[8].onclick = function() {
+        modal[8].style.display = "block";
+        }
+        btn[9].onclick = function() {
+        modal[9].style.display = "block";
+        }
+        btn[10].onclick = function() {
+        modal[10].style.display = "block";
+        }
+        btn[11].onclick = function() {
+        modal[11].style.display = "block";
+        }
+        
+        
         
       // When the user clicks on <span> (x), close the modal
         span[0].onclick = function() {
@@ -172,6 +319,24 @@
         span[5].onclick = function() {
         modal[5].style.display = "none";
         }
+        span[6].onclick = function() {
+        modal[6].style.display = "none";
+        }
+        span[7].onclick = function() {
+        modal[7].style.display = "none";
+        }
+        span[8].onclick = function() {
+        modal[8].style.display = "none";
+        }
+        span[9].onclick = function() {
+        modal[9].style.display = "none";
+        }
+        span[10].onclick = function() {
+        modal[10].style.display = "none";
+        }
+        span[11].onclick = function() {
+        modal[11].style.display = "none";
+        }
       // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
           if (event.target == modal) {
@@ -182,4 +347,4 @@
       
     
 </body>
-</html>
+</html> 

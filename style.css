@@ -17,12 +17,19 @@ h2{
 
 }
 header{
+    
     padding: 25px;
     background-color: #BADFE7;
     margin: auto;
+    box-shadow: #0A4950;
+    
+    
 }
+body {
+  background-image: linear-gradient(to right,#badfe7,#c2edce,#badfe7);
 
-.card {
+}
+.card, atasare {
     box-shadow: 0 4px 8px 0;
     max-width: 300px;
     margin: auto;
@@ -34,13 +41,22 @@ header{
   
   .card button {
     border: none;
-    padding: 12px;
+    padding: 16px;
     color: #388087;
     background-color: #c2edce;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
   }
 /* The Modal (background) */
 .modal {
@@ -67,10 +83,21 @@ header{
     color: #0A4950;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  /* Modal Cod Prezenta */
+  .modal-content-codprezenta {
+    background-color: #6FB3B8;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #388087;
+    width: 80%;
+    color: #0A4950;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   
   /* The Close Button */
   .close {
-    color: #6FB3B8;
+    color:#0A4950;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -87,7 +114,7 @@ header{
 
   .myBtn {
       border: none;
-      padding: 40px 50px;
+      padding: 10px 20px;
       background-color: #BADFE7;
       color: #0A4950;
       text-align: left;
@@ -97,3 +124,5 @@ header{
       border-radius: 10px;
 
   }
+
+  
