@@ -2,11 +2,33 @@
 <html lang="ro">
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Pagina principala</title>
+        <meta charset="utf-8"/>
+        <title>Pagina principala - Login</title>
     </head>
 <body>
     <header>
         <h1>ClaMa (Class Manager)</h1>
+        <h2>Pagina principala - Login</h2>
     </header>
+    <br>
+    <div class="card">
+        <form action="/cont.php" method="post">
+            <table>
+                <tr>
+                    <td>Username (Contul de pe serverul fenrir):</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="1"><input type="submit" value="Login"></td>
+                    <td>Nu ai cont? <a href="autentificare.html">Sign in</a></td>
+                </tr>
+            </table>
+        </form>
+      </div>
+
 </body>
 </html>

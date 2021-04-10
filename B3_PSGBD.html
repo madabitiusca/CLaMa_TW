@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8"/>
+        <title>PSGBD</title>
+    </head>
+<body>
+    <header>
+        
+        <h1>ClaMa (Class Manager)</h1>
+        <h2>PSGBD</h2>
+        <form action="index.html">
+            <input type="submit" value="Deconectare" />
+        </form>
+    </header>
+    <br>
+    <a href="generare_cod_prezenta.html">Generare cod prezenta</a><br>
+    <table id="B3_TW">
+        <tr>
+            <td>Nume student</td>
+            <td>Numar prezente</td>
+            <td>I</td>
+            <td>S</td>
+            <td>Nota finala</td>
+        </tr>
+        <tr>
+            <td>Ion Gheorghe</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Nistor Andreea</td>
+            <td>7</td>
+            <td>8</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Chimu Stefan</td>
+            <td>6</td>
+            <td>5</td>
+            <td>8</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Bitiusca Madalina</td>
+            <td>6</td>
+            <td>8</td>
+            <td>9</td>
+            <td>9</td>
+        </tr><tr>
+            <td>Vieriu Alina</td>
+            <td>7</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+        </tr><tr>
+            <td>Pintilie Crina</td>
+            <td>5</td>
+            <td>9</td>
+            <td>9</td>
+            <td>9</td>
+        </tr><tr>
+            <td>Popescu Ion</td>
+            <td>6</td>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+        </tr><tr>
+            <td>Vidrascu Catalin</td>
+            <td>7</td>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+        </tr><tr>
+            <td>Munteanu Andreea</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+        </tr><tr>
+            <td>Damian Andrei</td>
+            <td>6</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+        </tr><tr>
+            <td>Chimu Alin</td>
+            <td>7</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+        </tr><tr>
+            <td>Mantea Georgiana</td>
+            <td>7</td>
+            <td>10</td>
+            <td>9</td>
+            <td>10</td>
+        </tr><tr>
+            <td>Stoica Alexandra</td>
+            <td>5</td>
+            <td>8</td>
+            <td>10</td>
+            <td>9</td>
+        </tr><tr>
+            <td>Paun Alexandru</td>
+            <td>6</td>
+            <td>6</td>
+            <td>8</td>
+            <td>7</td>
+        </tr><tr>
+            <td>Ilie Andreea</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+        </tr>
+    </table>
+    <script>
+        var table = document.getElementById('B3_TW');
+        var cells = table.getElementsByTagName('td');
+
+        for (var i=0; i < cells.length; i++)
+            {
+                cells[i].onclick = function()
+                {
+                    if(this.hasAttribute('data-clicked'))
+                    {
+                        return;
+                    }
+                    this.setAttribute('data-clicked', 'yes')
+                    this.setAttribute('data-text', this.innerHTML);
+
+                    var input = document.createElement('input');
+                    input.setAttribute('type', 'text');
+                    input.value = this.innerHTML;
+                    input.style.width = this.offsetWidth - (this.clientLeft * 2) + "px";
+                    input.style.height = this.offsetHeight - (this.clientTop *2) + "px";
+                    input.style.border = "0px";
+                    input.style.fontFamily = "inherit";
+                    input.style.fontSize = "inherit";
+                    input.style.textAlign = "inherit";
+                    input.style.backgroundColor = "LightGoldenRodYellow";
+                    input.onblur = function()
+                        {
+                            var td = input.parentElement;
+                            var orig_text = input.parentElement.getAttribute('data-text');
+                            var current_text = this.value;
+
+                            if (orig_text != current_text)
+                            {
+                                //daca sunt schimbari in tabel
+                                td.removeAttribute('data-clicked');
+                                td.removeAttribute('data-text');
+                                td.innerHTML = current_text;
+                                td.style.cssText = 'padding: 5px';
+                                console.log(orig_text + ' este schimbat cu ' + current_text);
+                            }
+                            else
+                            {
+                                //daca sunt schimbari in tabel
+                                td.removeAttribute('data-clicked');
+                                td.removeAttribute('data-text');
+                                td.innerHTML = current_text;
+                                td.style.cssText = 'padding: 5px';
+                                console.log('Nu exista schimbari in tabel');
+                            }
+                        }
+               
+                    input.onkeypress = function()
+                    {
+                        if (event.keyCode == 13)
+                            this.blur();
+                    }
+                    this.innerHTML = '';
+                    this.style.cssText = 'padding: 0px 0px';
+                    this.append(input);
+                    this.firstElementChild.select();
+
+               }
+            }
+    
+    </script>
+</body>
+</html>

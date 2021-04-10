@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8"/>
+        <title>Autentificare</title>
+    </head>
+<body>
+    <header>
+        <h1>ClaMa (Class Manager)</h1>
+        <h2>Autentificare</h2>
+    </header>
+    <br>
+    <div class="card">
+        <form action="/cont.php" method="post">
+            <table>
+                <tr>
+                    <td>Username (Contul de pe serverul fenrir):</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td>Confirm password:</td>
+                    <td><input type="password" id="confirm_password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="1"><input type="submit" value="Sign in"></td>
+                    <td>Ai cont creat? <a href="index.html">Login</a></td>
+                </tr>
+            </table>
+        </form>
+      </div>
+<script>
+
+function validatePassword(){
+    var password = document.getElementById("password");
+    var confirm_password = document.getElementById("confirm_password");
+
+    if(password.value=="")
+    {
+        alert("Nu ati introdus parola")
+    }
+
+    if(confirm_password.value=="")
+    {
+       alert("Nu ati confirmat parola")
+    }
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Parolele sunt diferite");
+  } else {
+        alert("Parolele se potrivesc! Bun venit in ClaMa!")
+ }
+}
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+</body>
+</html>

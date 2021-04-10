@@ -4,17 +4,35 @@ h1{
     text-align: center;
     color: #388087;
 }
+
 h2{
     font-size: 20px;
     font-family: sans-serif;
-    text-align: left;
+    text-align: center;
     color: #388087;
 }
+
+h3{
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: left;
+  color: #388087;
+}
+
+.disconnect{
+  
+  cursor: pointer;
+}
+
+input[type=submit]
+{
+    cursor: pointer;
+    float: right;
+}
+
 .p{
     color: #388087;
     font-family: sans-serif;
-
-
 }
 header{
     
@@ -29,7 +47,7 @@ body {
   background-image: linear-gradient(to right,#badfe7,#c2edce,#badfe7);
 
 }
-.card, atasare {
+.card{
     box-shadow: 0 4px 8px 0;
     max-width: 300px;
     margin: auto;
@@ -37,6 +55,7 @@ body {
     font-family: arial;
     background-color: #BADFE7;
     color: #388087;
+    line-height: 200%;
   }
   
   .card button {
@@ -49,7 +68,34 @@ body {
     width: 100%;
     font-size: 18px;
   }
+  .atasare {
+    box-shadow: 0 4px 8px 0;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #BADFE7;
+    color: #388087;
+  }
 
+  .anunt{
+    box-shadow: 0 4px 8px 0;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #BADFE7;
+    color: #388087;
+    line-height: 200%;
+  }
+textarea{
+  resize: none;
+  width: 700px;
+  height: 150px;
+  background-color: rgb(212, 235, 243);
+  color: #388087;
+  border: 0px;
+}
   table {
     border-collapse: collapse;
     width: 100%;
@@ -109,8 +155,6 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-
- 
 
   .myBtn {
       border: none;
