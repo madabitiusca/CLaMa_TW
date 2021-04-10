@@ -5,48 +5,121 @@ h1{
     color: #388087;
 }
 
-h2{
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #388087;
+
+
+.materii-text{
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #388087;
+
 }
 
-h3{
+
+h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #388087;
+}
+
+h4 {
   font-size: 20px;
   font-family: sans-serif;
   text-align: left;
   color: #388087;
-}
 
-.disconnect{
-  
-  cursor: pointer;
-}
-
-input[type=submit]
-{
-    cursor: pointer;
-    float: right;
 }
 
 .p{
     color: #388087;
     font-family: sans-serif;
 }
+
+
 header{
-    
-    padding: 25px;
+    overflow: hidden;
+    padding: 20px 10px;
     background-color: #BADFE7;
-    margin: auto;
-    box-shadow: #0A4950;
-    
-    
 }
-body {
-  background-image: linear-gradient(to right,#badfe7,#c2edce,#badfe7);
+
+
+header a{
+  float: right;
+  color: #388087;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  float: left;
+}
+
+header a:hover {
+  color:#0A4950;
+}
+
+a {
+  text-decoration: none;
+}    
+
+@media screen and (max-width: 500px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
 }
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to right,#badfe7,#c2edce,#badfe7);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section, article {
+  margin-left: 20%;
+  padding: 0px;
+}
+
+
+
+.meniu {
+  height: 100%;
+  text-align: left;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.meniu a{
+  color:#0A4950;
+  padding: 15px 8px 20px 30px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 25px;
+  display: block;
+  align-items: center;
+}
+
+.meniu a:hover {
+  color:#388087;
+}
+
+
+
+
 .card{
     box-shadow: 0 4px 8px 0;
     max-width: 300px;
@@ -123,23 +196,14 @@ textarea{
   .modal-content {
     background-color: #BADFE7;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #388087;
     width: 80%;
     color: #0A4950;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  /* Modal Cod Prezenta */
-  .modal-content-codprezenta {
-    background-color: #6FB3B8;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #388087;
-    width: 80%;
-    color: #0A4950;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+
   
   /* The Close Button */
   .close {

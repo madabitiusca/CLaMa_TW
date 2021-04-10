@@ -3,18 +3,40 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8"/>
-        <title>Tehnologii Web</title>
+        <title>PSGBD</title>
     </head>
 <body>
     <header>
-        
-        <h1>ClaMa (Class Manager)</h1>
-        <h2>PSGBD</h2>
-        <form action="index.html">
-            <input type="submit" value="Deconectare" />
-        </form>
+        <a href="" class="logo">ClaMa (Class Manager)</a>
+        <a class="Deconectare" href="index.html">Deconectare</a>
     </header>
     <br>
+
+    <nav>
+        <div class="meniu" style="width: 20%">
+          <a href="TW.html"><span>Tehnologii Web</span></a>
+          <a href="PSGBD.html"><span>PSGBD</span></a>
+          <a href=""><span>Anunțuri</span></a>
+          <a href="adauga_anunt.html"><span>Adauga anunt</span></a>
+        </div>
+      </nav>
+
+      <article>
+    <h3>PSGBD</h3>
+
+     <!--introducere metoda de notare de notare-->
+     <button class="myBtn">Introducere metoda de notare</button>
+     <div class="modal">
+       <div class="modal-content">
+         <span class="close">x</span>
+         <h4> Formula notare </h4>
+         <form action="/action_page.php" method="post" enctype="text/plain">
+           <input type="text" name="Numar note"><br><br>
+           <input type="submit" value="Salveaza">
+           </form>
+       </div>
+     </div>
+
     <div class="card">
         <h2>Grupe</h2>
         <a href="B3_PSGBD.html">Grupa A1</a>
@@ -23,6 +45,26 @@
         <br>
         <a href="B3_PSGBD.html">Grupa E1</a>
       </div>
+      </article>
 
+      <script>
+      // modal
+      var modal = document.getElementsByClassName("modal");
+
+      // Buton pentru modal
+      var btn = document.getElementsByClassName("myBtn");
+
+      // Elementul <span> care inchide modal-ul
+      var span = document.getElementsByClassName("close");
+
+      // Deschidere modal
+      btn[0].onclick = function() {
+      modal[0].style.display = "block";
+      }
+      //  <span> (x), inchide modal-ul
+      span[0].onclick = function() {
+          modal[0].style.display = "";
+          }
+    </script>
 </body>
 </html>

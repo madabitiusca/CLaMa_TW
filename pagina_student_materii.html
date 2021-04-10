@@ -2,22 +2,32 @@
 <html lang="ro">
     <head>
         <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8"/>
-        <title>Pagina principala</title>
+        <title>Clama - materii student</title>
+        <meta charset="UTF-8">
     </head>
 <body>
+
     <header>
-        <h1>ClaMa (Class Manager)</h1>
-        <h2>Pagina studentului</h2>
-        <form action="index.html">
-          <input type="submit" value="Deconectare" />
-      </form>
+        <a href="" class="logo">ClaMa (Class Manager)</a>
+        <a class="Deconectare" href="index.html">Deconectare</a>
     </header>
+
+
+    <nav>
+      <div class="meniu" style="width: 20%">
+        <a href="pagina_student_noutati.html"><span>Noutăți</span></a>
+        <a href="pagina_student_materii.html"><span>Materii</span></a>
+
+      </div>
+    </nav>
+
+    <section>
+    <h4>Catalog</h4>
 
     <table>
       <tr>
         <!--materie-->
-        <th> <h3>Tehnologii Web</h3></th>
+        <th> <a href="" class="materii-text" >Tehnologii web</a></th>
           <th><!-- Modal  Note-->
             <button class="myBtn">Note</button>
             <!--  Modal -->
@@ -33,8 +43,9 @@
                     <p>T: </p>
                   </div>
                 <div class="modal-footer">
-                  <h3>Nota finala: 0</h3>
+                  <p>Nota finala: 0</p>
                 </div>
+            </div>
             </div>
         </th>
         <!--prezente-->  
@@ -51,8 +62,9 @@
                 
               </div>
             <div class="modal-footer">
-              <h3>Total prezente: 0</h3>
+              <p>Total prezente: 0</p>
             </div>
+        </div>
         </div>
         </th>
 
@@ -60,11 +72,11 @@
         <td>
           <button class="myBtn">Introducere cod prezenta</button>
           <div class="modal">
-            <div class="modal-content-codprezenta">
+            <div class="modal-content">
               <span class="close">x</span>
-              <h3>Cod prezenta: </h3>
-              <form action="/action_page.php" method="post" enctype="text/plain">
-                <input type="text" name=""><br><br>
+              <p>Cod prezenta: </p>
+              <form action="/" method="post" enctype="text/plain">
+                <input type="text" name="cod"><br><br>
                 <input type="submit" value="Trimite">
                 </form>
             </div>
@@ -82,11 +94,12 @@
              </div>
               <div class="Atasare">
                 <form action="/action_page.php">
-                  <input type="file" id="myFile" name="filename">
-                
+                  <input type="file" id="myFile0" name="filename">
+                  <br>
                   <input type="submit">
                 </form>
               </div>
+        </div>
         </div>
            </th>
       </tr>
@@ -94,7 +107,7 @@
       
       <tr>
         <!--materie-->
-        <th> <h3>Programare avansata</h3></th>
+       <th><a href="" class="materii-text">Programare avansata</a></th>
           <th><!-- Modal  Note-->
             <button class="myBtn">Note</button>
             <!--  Modal -->
@@ -109,8 +122,9 @@
                     <p>Nota test scris: 0</p>
                   </div>
                 <div class="modal-footer">
-                  <h3>Nota finala: 0</h3>
+                  <p>Nota finala: 0</p>
                 </div>
+            </div>
             </div>
         </th>
         <!--prezente-->  
@@ -127,8 +141,9 @@
                 
               </div>
             <div class="modal-footer">
-              <h3>Total prezente: 0</h3>
+              <p>Total prezente: 0</p>
             </div>
+        </div>
         </div>
         </th>
 
@@ -136,11 +151,11 @@
         <th>
           <button class="myBtn">Introducere cod prezenta</button>
           <div class="modal">
-            <div class="modal-content-codprezenta">
+            <div class="modal-content">
               <span class="close">x</span>
-              <h3>Cod prezenta: </h3>
+              <p>Cod prezenta: </p>
               <form action="/action_page.php" method="post" enctype="text/plain">
-                <input type="text" name=""><br><br>
+                <input type="text" name="cod"><br><br>
                 <input type="submit" value="Trimite">
                 </form>
             </div>
@@ -158,19 +173,18 @@
              </div>
                 <div class="Atasare">
                   <form action="/action_page.php">
-                    <input type="file" id="myFile" name="filename">
-                  
+                    <input type="file" id="myFile1" name="filename">
                     <input type="submit">
                   </form>
-                </div>
-                
+                </div>   
+        </div>
         </div>
            </th>
       </tr>
     
       <tr>
         <!--materie-->
-        <th> <h3>Ingineria Programarii</h3></th>
+        <th><a href="" class="materii-text">Ingineria Programarii</a></th>
           <th><!-- Modal  Note-->
             <button class="myBtn">Note</button>
             <!--  Modal -->
@@ -185,10 +199,15 @@
                     <p>Nota test scris: 0</p>
                   </div>
                 <div class="modal-footer">
-                  <h3>Nota finala: 0</h3>
+                  <p>Nota finala: 0</p>>
                 </div>
             </div>
+            </div>
         </th>
+
+
+
+        
         <!--prezente-->  
         <th>
           <button class="myBtn">Prezente</button>
@@ -203,8 +222,9 @@
                 
               </div>
             <div class="modal-footer">
-              <h3>Total prezente: 0</h3>
+              <p>Total prezente: 0</p>
             </div>
+        </div>
         </div>
         </th>
 
@@ -212,11 +232,11 @@
         <th>
           <button class="myBtn">Introducere cod prezenta</button>
           <div class="modal">
-            <div class="modal-content-codprezenta">
+            <div class="modal-content">
               <span class="close">x</span>
-              <h3>Cod prezenta: </h3>
+              <p>Cod prezenta: </p>
               <form action="/action_page.php" method="post" enctype="text/plain">
-                <input type="text" name=""><br><br>
+                <input type="text" name="cod"><br> <br>
                 <input type="submit" value="Trimite">
                 </form>
             </div>
@@ -234,19 +254,20 @@
              </div>
                 <div class="Atasare">
                   <form action="/action_page.php">
-                    <input type="file" id="myFile" name="filename">
-                  
+                    <input type="file" id="myFile2" name="filename">
                     <input type="submit">
                   </form>
                 </div>
         </div>
+        </div>
            </th>
       </tr>
 
-
     </table>
       
-      
+    </section>
+
+    
 
 
       <script>
