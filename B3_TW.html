@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html itemscope itemtype="http://schema.org/WebPage" lang="ro">
     <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8"/>
+        <meta itemprop="name" content="ClaMa (Class Manager)">
+        <meta itemprop="description" content="Website for college and schools, to see grades and announcements.">
         <title>Tehnologii Web</title>
     </head>
 <body>
@@ -11,11 +13,13 @@
         <a class="Deconectare" href="index.html">Deconectare</a>
     </header>
     <nav>
+        <div itemscope>
         <div class="meniu" style="width: 20%">
-          <a href="TW.html"><span>Tehnologii Web</span></a>
-          <a href="PSGBD.html"><span>PSGBD</span></a>
+          <a href="TW.html"><span itemprop="name">Tehnologii Web</span></a>
+          <a href="PSGBD.html"><span itemprop="name">PSGBD</span></a>
           <a href=""><span>Anunțuri</span></a>
           <a href="adauga_anunt.html"><span>Adauga anunt</span></a>
+        </div>
         </div>
       </nav>
 
@@ -32,11 +36,11 @@
       </div>
     <table id="B3_TW">
         <tr>
-            <td>Nume student</td>
-            <td>Numar prezente</td>
-            <td>I</td>
-            <td>S</td>
-            <td>Nota finala</td>
+            <th>Nume student</th>
+            <th>Numar prezente</th>
+            <th>I</th>
+            <th>S</th>
+            <th>Nota finala</th>
         </tr>
         <tr>
             <td>Ion Gheorghe</td>
