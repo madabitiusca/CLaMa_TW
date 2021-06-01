@@ -16,10 +16,10 @@
 
     <nav>
         <div class="meniu" style="width: 20%">
-          <a href="TW.html"><span itemprop="name">Tehnologii Web</span></a>
-          <a href="PSGBD.html"><span itemprop="name">PSGBD</span></a>
+          <a href="TW.php"><span itemprop="name">Tehnologii Web</span></a>
+          <a href="PSGBD.php"><span itemprop="name">PSGBD</span></a>
           <a href=""><span>Anunțuri</span></a>
-          <a href="adauga_anunt.html"><span>Adauga anunt</span></a>
+          <a href="adauga_anunt.php"><span>Adauga anunt</span></a>
         
         </div>
       </nav>
@@ -44,11 +44,11 @@
 
     <div class="card">
         <h2>Grupe</h2>
-        <a href="B3_TW.html">Grupa B3</a>
+        <a href="B3_TW.php">Grupa B3</a>
         <br>
-        <a href="B3_TW.html">Grupa E3</a>
+        <a href="B3_TW.php">Grupa E3</a>
         <br>
-        <a href="B3_TW.html">Grupa E4</a>
+        <a href="B3_TW.php">Grupa E4</a>
       </div>
 
     </section>

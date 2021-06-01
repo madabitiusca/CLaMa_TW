@@ -14,7 +14,7 @@
     <br>
     <h3>Autentificare</h3>
     <div class="card">
-        <form action="/cont.php" method="post">
+        <form action="includes/signup.inc.php" method="post">
             <table>
                 <tr>
                     <td>Username (Contul de pe serverul fenrir):</td>
@@ -22,42 +22,44 @@
                 </tr>
                 <tr>
                     <td>Password:</td>
-                    <td><input type="password" id="password" required></td>
+                    <td><input type="password" name="password" id="password" required></td>
                 </tr>
                 <tr>
                     <td>Confirm password:</td>
-                    <td><input type="password" id="confirm_password" required></td>
+                    <td><input type="password" name="confirm_password" id="confirm_password" required></td>
                 </tr>
                 <tr>
-                    <td colspan="1"><input type="submit" value="Sign in"></td>
-                    <td>Ai cont creat? <a href="index.html">Login</a></td>
+                    <td colspan="1"><input type="submit" name="submit"  value="Sign in"></td>
+                    <td>Ai cont creat? <a href="index.php">Login</a></td>
                 </tr>
             </table>
+            <?php
+      if (isset($_GET["error"])) {
+    if($_GET["error"]=="lipsa_input"){
+        echo "<p> Contul fenrir sau parola lipseste!</p>";
+    }
+    else if ($_GET["error"]=="emil_invalid") {
+        echo "<p>Contul fenrir nu este valid</p>";
+    } else if ($_GET["error"]=="parolanuseportiveste"){
+        echo "<p>Parola nu se portiveste</p>";
+    } else if ($_GET["error"]=="emil_exista") {
+        echo "<p>Cont fenrir utilizat</p>";
+    }
+}
+?>
         </form>
       </div>
+
+
+
 <script>
 
 function validatePassword(){
     var password = document.getElementById("password");
     var confirm_password = document.getElementById("confirm_password");
-
-    if(password.value=="")
-    {
-        alert("Nu ati introdus parola")
-    }
-
-    if(confirm_password.value=="")
-    {
-       alert("Nu ati confirmat parola")
-    }
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Parolele sunt diferite");
-  } else {
-        alert("Parolele se potrivesc! Bun venit in ClaMa!")
- }
 }
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+
 </script>
 </body>
+
 </html>

@@ -10,15 +10,15 @@
 <body>
     <header>
         <a href="" class="logo">ClaMa (Class Manager)</a>
-        <a class="Deconectare" href="index.html">Deconectare</a>
+        <a class="Deconectare" href="index.php">Deconectare</a>
     </header>
     <nav>
         <div itemscope>
         <div class="meniu" style="width: 20%">
-          <a href="TW.html"><span itemprop="name">Tehnologii Web</span></a>
-          <a href="PSGBD.html"><span itemprop="name">PSGBD</span></a>
+          <a href="TW.php"><span itemprop="name">Tehnologii Web</span></a>
+          <a href="PSGBD.php"><span itemprop="name">PSGBD</span></a>
           <a href=""><span>Anunțuri</span></a>
-          <a href="adauga_anunt.html"><span>Adauga anunt</span></a>
+          <a href="adauga_anunt.php"><span>Adauga anunt</span></a>
         </div>
         </div>
       </nav>

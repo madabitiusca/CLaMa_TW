@@ -10,16 +10,16 @@
 <body>
     <header>
         <a href="" class="logo">ClaMa (Class Manager)</a>
-        <a class="Deconectare" href="index.html">Deconectare</a>
+        <a class="Deconectare" href="index.php">Deconectare</a>
     </header>
     <br>
 
     <nav>
         <div class="meniu" style="width: 20%">
-          <a href="TW.html"><span itemprop="name">Tehnologii Web</span></a>
-          <a href="PSGBD.html"><span itemprop="name">PSGBD</span></a>
+          <a href="TW.php"><span itemprop="name">Tehnologii Web</span></a>
+          <a href="PSGBD.php"><span itemprop="name">PSGBD</span></a>
           <a href=""><span>Anunțuri</span></a>
-          <a href="adauga_anunt.html"><span>Adauga anunt</span></a>
+          <a href="adauga_anunt.php"><span>Adauga anunt</span></a>
         </div>
       </nav>
 
@@ -41,11 +41,11 @@
 
     <div class="card">
         <h2>Grupe</h2>
-        <a href="B3_PSGBD.html">Grupa A1</a>
+        <a href="B3_PSGBD.php">Grupa A1</a>
         <br>
-        <a href="B3_PSGBD.html">Grupa B3</a>
+        <a href="B3_PSGBD.php">Grupa B3</a>
         <br>
-        <a href="B3_PSGBD.html">Grupa E1</a>
+        <a href="B3_PSGBD.php">Grupa E1</a>
       </div>
       </article>
 

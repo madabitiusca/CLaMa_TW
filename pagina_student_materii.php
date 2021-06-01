@@ -11,14 +11,14 @@
 
     <header>
         <a href="" class="logo">ClaMa (Class Manager)</a>
-        <a class="Deconectare" href="index.html">Deconectare</a>
+        <a class="Deconectare" href="index.php">Deconectare</a>
     </header>
 
 
     <nav>
       <div class="meniu" style="width: 20%">
-        <a href="pagina_student_noutati.html"><span>Noutăți</span></a>
-        <a href="pagina_student_materii.html"><span>Materii</span></a>
+        <a href="pagina_student_noutati.php"><span>Noutăți</span></a>
+        <a href="pagina_student_materii.php"><span>Materii</span></a>
 
       </div>
     </nav>

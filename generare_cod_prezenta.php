@@ -11,7 +11,7 @@
     <header>
         <h1>ClaMa (Class Manager)</h1>
         <h2>Generare cod prezenta</h2>
-        <form action="index.html">
+        <form action="index.php">
             <input type="submit" value="Deconectare" />
         </form>
     </header>

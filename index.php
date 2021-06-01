@@ -15,7 +15,7 @@
     <br>
     <h3>Login</h3>
     <div class="card">
-        <form action="/cont.php" method="post">
+        <form action="login.inc.php" method="post">
             <table>
                 <tr>
                     <td>Username (Contul de pe serverul fenrir):</td>
@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <td colspan="1"><input type="submit" value="Login"></td>
-                    <td>Nu ai cont? <a href="autentificare.html">Sign in</a></td>
+                    <td>Nu ai cont? <a href="autentificare.php">Sign in</a></td>
                 </tr>
             </table>
         </form>
